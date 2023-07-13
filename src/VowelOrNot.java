@@ -1,5 +1,4 @@
 
-import javax.swing.*;
 import java.util.Scanner;
 public class VowelOrNot {
     public static void main(String[] args)
@@ -10,7 +9,7 @@ public class VowelOrNot {
         char l=Character.toLowerCase(alp);
         if (l == 'a'|| l == 'e'|| l == 'i'|| l == 'o'|| l == 'u') {
             System.out.println("The given input is a Vowel");
-            ;
+
         }
 
         else
