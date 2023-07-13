@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class MaxMinAvg { public static void main(String[] args) {
+public class MaxMinAvg {
+    public static void main(String[] args) {
     System.out.println("Enter the value of n");
     Scanner input = new Scanner(System.in);
     int n = input.nextInt();
