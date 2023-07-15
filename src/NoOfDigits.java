@@ -18,6 +18,6 @@ public class NoOfDigits {
             }
         }
 
-        System.out.println("Count = " + count);
+        System.out.println("Number of digits= " + count);
     }
 }
