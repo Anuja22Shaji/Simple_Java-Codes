@@ -4,22 +4,22 @@ public class ArmstrongOrNot {
     public static void main(String[] args) {
         System.out.println("Enter the number");
         Scanner input = new Scanner(System.in);
-        int e = input.nextInt();
-        int n = e;
-        int u = e;
-        int s = 0;
-        int c = 0;
+        int num = input.nextInt();
+        int copy1 = num;
+        int copy2 = num;
+        int sum = 0;
+        int count = 0;
 
-        while (e != 0) {
-            e /= 10;
-            c++;
+        while (num != 0) {
+            num /= 10;
+            count++;
         }
-        while (n != 0) {
-            int p = n % 10;
-            s = s + (int) Math.pow(p, c);
-            n /= 10;
+        while (copy1 != 0) {
+            int p = copy1 % 10;
+            sum = sum + (int) Math.pow(p, count);
+            copy1/= 10;
         }
-        if (s == u) {
+        if (sum == copy2) {
             System.out.println("Armstrong ");
         } else {
             System.out.println("Not Armstrong ");
