@@ -6,24 +6,27 @@ public class RemoveDuplicate {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
         int[] a = new int[n];
-        int[] b = new int[n];
-        int[] temp = new int[n];
+
         System.out.println("Enter the  nos in the array");
-        for (int j = 0; j < n; j++) {
+        for (int j = 0;j < n;j++) {
             a[j] = input.nextInt();
         }
-        int k=0;
 
-            for (int j =0 ; j < n -1; j++) {
-                if (a[j] != a[j+1]) {
-                    temp[k++]= a[j];
-                   // k++;
+        for (int j = 0; j < n; j++) {
+            for (int i = j + 1; i < n; i++) {
+                if (a[j] == a[i]) {
+
+                    for (int k = i; k < n - 1; k++) {
+                        a[k] = a[k + 1];
+                    }
+                    n--;
+                    i--;
                 }
-
             }
+        }
             System.out.println("New Array is");
-            for (int j = 0; j < k; j++) {
-                System.out.println(temp[j]);
+            for (int j = 0; j < n; j++) {
+                System.out.println(a[j]);
             }
 
     }
